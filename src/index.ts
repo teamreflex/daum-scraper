@@ -43,4 +43,6 @@ const selector = `.txc-image-grid`;
 
   // download them
   await downloadImages(images, getFolder(url));
+
+  return;
 })();

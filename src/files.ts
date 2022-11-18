@@ -34,5 +34,6 @@ const saveImage = async (url: string, path: string): Promise<boolean> => {
 }
 
 const makeFolder = (folder: string) => {
+  folder = `downloads/${folder}`
   return !existsSync(folder) && mkdirSync(folder, { recursive: true })
 }
